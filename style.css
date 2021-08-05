@@ -1,0 +1,67 @@
+* {    /* The asterisks (*) is known as the CSS universal selectors. It can be used to select any and all types of elements in an HTML page.*/    margin: 0;    /* set margin around all elements on html page = 0, also cursor wont be visible and content will be displayed on full page */    padding: 0;    /* Padding creates extra space within an element so 0 extra spaces within all elements of this html page*/    box-sizing: border-box;    /* The box-sizing property allows us to include the padding and border in an element's total width and height so apply box-sizing to all html elements on this page */}
+body {   
+      font-family: 'Tahoma';    
+      background-size: cover;   
+     /* Resize the background image to cover the entire container, 
+     even if it has to stretch the image or cut a little bit off one of the edges*/    
+     background-position: top center;   
+      /* The background-position property sets the starting position of a background image.*/}
+
+.app-wrap {    
+     display: flex;    
+     flex-direction: column;   
+     /* Set the direction of the flexible items inside the <app-wrap> div column order:*/  
+     min-height: 100vh;    
+     background-color: black;}
+
+header {   
+     display: flex;    
+    justify-content: center;    
+    align-items: center;    
+    padding: 10px;    
+    border: olive solid 6.5px;    
+    border-radius: 10px;    
+    background-image: linear-gradient(to bottom, white, rgb(255, 255, 255));    
+    margin-left: 20px;    
+    margin-right: 20px;    
+    font-family: 'Tahoma';    
+    font-size: 30px;    
+    font-weight: bold;    
+    margin-bottom: 60px;    
+    box-shadow: 0 8px 16px 0 rgb(160, 20, 27), 0 6px 20px 0 rgba(0, 0, 0, 0.993);    
+    color: olivedrab;}
+
+.recipe-container {   
+     display: flex;    
+     flex-wrap: wrap;    
+     justify-content: center;  
+       border: 2px solid olive;    
+       border-radius: 10px;    
+       margin-left: 20px;   
+        margin-right: 20px;   
+         box-shadow: 0 8px 16px 0 olivedrab, 0 6px 20px 0 maroon;   
+          /* opacity: 0.5; */    /* z-index:0; */}
+
+.recipe-card {    
+     color: olivedrab;    
+     font-style: oblique;    
+     font-weight: bolder;    
+     background-image: none;   
+     background-repeat: no-repeat;    
+     background-size: contain;   
+     background-position: top center;    
+     background-image: linear-gradient(to top, olivedrab, lime);    
+     padding: 135px 0px 0px 10px;    
+     font-family: 'Otomanopee One', sans-serif;    
+     width: 270px;    
+     height: 200px;    
+     margin: 30px;    
+     text-align: center;    
+     font-size: 22px;    
+     border: orange;    
+     border-radius: 10px;    
+     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+     background: rgba(76, 175, 80, 0.1);    
+     /* background: rgba(76, 175, 80, 0.6); */ 
+        /* background: rgba(76, 175, 80, 0.3); */
+     }
